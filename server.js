@@ -203,7 +203,7 @@ app.use((err, req, res, next) => {
 		// report the first validation error
 		errMessage = err.errors[keys[0]].message;
 	} else {
-		// generic or custom error
+		// This is a generic or custom error
 		errCode = err.status || 500;
 		errMessage = err.message || 'Internal Server Error';
 	}
